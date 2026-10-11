@@ -1,0 +1,48 @@
+{
+  "auc_last_active_week_nocv": 0.9180123576072967,
+  "auc_active_weeks_nocv": 0.8791172904558185,
+  "median_last_active_week": {
+    "non_dropout": 33.0,
+    "dropout": 7.0
+  },
+  "share_withdrawn_unregistered_before_end": 0.9895368303571429,
+  "v11_validation_set": {
+    "n": 2923,
+    "dropout_rate": 0.12931919261033184,
+    "dropout_rate_rest": 0.2581258315909523,
+    "recon_mse_mean": 0.26115313172340393,
+    "recon_mse_mean_rest": 0.505534291267395,
+    "composition": {
+      "FFF_2014J": 557,
+      "GGG_2013J": 895,
+      "GGG_2014B": 773,
+      "GGG_2014J": 698
+    }
+  },
+  "recon_mse_by_class": {
+    "mean": {
+      "non_dropout": 0.5571780204772949,
+      "dropout": 0.24694231152534485
+    },
+    "median": {
+      "non_dropout": 0.2899535000324249,
+      "dropout": 0.05753416195511818
+    }
+  },
+  "top_shap_embedding_dim": {
+    "feature": "lstm_005",
+    "mean_abs_shap": 1.2068110704421997,
+    "spearman_with_last_active_week": 0.8453116839842023,
+    "r2_linear_from_last_active_active_weeks_log_total": 0.8274693106113534
+  },
+  "tost_v11_corrected_nadeau_bengio": {
+    "ci90": [
+      -0.004023682256404721,
+      0.008841387328780653
+    ],
+    "p_tost": 0.110646129489674,
+    "margin": 0.006776745767870684,
+    "p_tost_uncorrected": 0.047830793977203356
+  },
+  "wilcoxon_min_p_n5_two_sided": 0.0625
+}

@@ -1,0 +1,13 @@
+# Versions non figées volontairement (vos exécutions antérieures n'ont pas de versions enregistrées).
+# bootstrap.sh écrit l'instantané exact dans logs/env_freeze.txt : le copier ici une fois l'environnement validé.
+numpy<2
+pandas
+pyarrow
+scipy
+scikit-learn
+xgboost
+matplotlib
+python-docx
+shap
+tensorflow-macos
+tensorflow-metal

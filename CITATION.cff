@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or these result files, please cite this repository. A reference to the article will be added once it is published."
+title: "Leakage-aware evaluation of student dropout prediction on OULAD: code and results"
+type: software
+authors:
+  - family-names: "El Aissaoui"
+    given-names: "Ouafae"
+    affiliation: "Sidi Mohamed Ben Abdellah University, Fez, Morocco"
+repository-code: "https://github.com/ouafae86/oulad-leakage-aware-evaluation"
+license: MIT
+keywords:
+  - student dropout prediction
+  - learning analytics
+  - temporal leakage
+  - evaluation design
+  - OULAD

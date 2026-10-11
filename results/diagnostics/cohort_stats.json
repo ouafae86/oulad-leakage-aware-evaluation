@@ -1,0 +1,56 @@
+{
+  "n_enrollments": 32593,
+  "n_excluded_no_vle": 3365,
+  "share_excluded": 0.10324302764397263,
+  "excluded_share_withdrawn": 0.887964338781575,
+  "excluded_median_unregistration_day": -18.0,
+  "n_cohort": 29228,
+  "dropout_rate": 0.24524428630080744,
+  "n_dropout": 7168,
+  "n_unique_students": 26074,
+  "n_students_multiple_enrollments": 2989,
+  "n_modules": 7,
+  "n_presentations": 4,
+  "n_module_presentation_pairs": 22,
+  "n_click_rows": 10655280,
+  "share_click_rows_before_start": 0.06466165131277639,
+  "n_activity_types": 20,
+  "sequence_shape": [
+    29228,
+    39,
+    20
+  ],
+  "dropout_rate_by_module": {
+    "AAA": {
+      "n": 735,
+      "rate": 0.15374149659863945
+    },
+    "BBB": {
+      "n": 6622,
+      "rate": 0.18951978254303836
+    },
+    "CCC": {
+      "n": 3983,
+      "rate": 0.3899071051970876
+    },
+    "DDD": {
+      "n": 5745,
+      "rate": 0.30757180156657965
+    },
+    "EEE": {
+      "n": 2685,
+      "rate": 0.18919925512104283
+    },
+    "FFF": {
+      "n": 7092,
+      "rate": 0.24929498025944727
+    },
+    "GGG": {
+      "n": 2366,
+      "rate": 0.08622147083685545
+    }
+  },
+  "withdrawn_without_unregistration_date": 74,
+  "non_withdrawn_with_unregistration_date": 8,
+  "median_unregistration_day_withdrawn": 68.0
+}

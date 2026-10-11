@@ -1,0 +1,49 @@
+# Provenance des résultats (générée par `tools/make_provenance.py` — ne pas éditer à la main)
+
+Environnement « Mac » : Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0, Keras 3.15.1, NumPy 1.26.4, pandas 3.0.6 (`logs/env_freeze.txt`).
+
+## Résultats par fenêtre et cours entier (`results/early_windows/`)
+
+| Fichier | Script (`experiments/early_windows/`) | Environnement | Entrées principales | Partition | Dernière écriture | SHA-256 (12 car.) |
+|---|---|---|---|---|---|---|
+| `results_windows.json` | `eval_windows.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) ; `agg_w<w>.parquet`, `sequences.npy` | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 12:58 | `ade9f492fba1` |
+| `results_designA.json` | `eval_designA.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `agg_w<w>.parquet`, `sequences.npy` (aucun autoencodeur) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-06 23:45 | `b1bca8ab7ac8` |
+| `results_labels_w12.json` | `eval_labels.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) ; B3 entraîné sur le Mac | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:01 | `a2c000a62f3e` |
+| `results_extra_labels.json` | `extra_controls.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:02 | `0dc6444d73cd` |
+| `results_extra_w39.json` | `extra_controls.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/embeddings.npy` (exécution v11 d'origine (versions non enregistrées)) ; encodeur non entraîné construit sur le Mac | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:03 | `05d7ab639b25` |
+| `results_lopo_w12.json` | `eval_lopo.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) ; B3 entraîné sur le Mac | une présentation retenue à la fois (pas de plis) | 2026-10-08 13:02 | `80c998b09211` |
+| `results_seeds_w4.json` | `train_ae_seeds.py, eval_seeds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `seeds/ae_w4_s42..46.npz` (Mac) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:04 | `afa189d06bde` |
+| `results_seeds_w8.json` | `train_ae_seeds.py, eval_seeds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `seeds/ae_w8_s42..46.npz` (Mac) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:05 | `ee01cd9071a3` |
+| `results_seeds_w12.json` | `train_ae_seeds.py, eval_seeds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `seeds/ae_w12_s42..46.npz` (Mac) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:05 | `c12dcc96caec` |
+| `results_seeds_w20.json` | `train_ae_seeds.py, eval_seeds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `seeds/ae_w20_s42..46.npz` (Mac) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:06 | `bdc4d9de30cf` |
+| `results_b3prime_w12.json` | `eval_b3prime.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `b3prime/ae_enc_w12_s42.npz` : autoencodeur de pré-entraînement entraîné sur le Mac (graine 42, instance distincte de `ae_w12.npz`) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 20:22 | `f0f0d9b7a42c` |
+| `results_b3prime_seeds_w12.json` | `eval_b3prime_seeds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `b3prime/ae_enc_w12_s42..46.npz` : 5 autoencodeurs de pré-entraînement entraînés sur le Mac ; graine 42 = résultats de `eval_b3prime.py` réutilisés | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 14:35 | `b275cdd6b94b` |
+| `results_b3prime_seeds_folds_w12.json` | `eval_b3prime_seeds_folds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | prédictions hors pli de `eval_b3prime.py` et `eval_b3prime_seeds.py` | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 20:37 | `09d127841661` |
+| `results_seedavg.json` | `eval_seedavg.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `seeds/ae_w<w>_s42..46.npz` (Mac) ; prédictions hors pli T-07 et T-10 | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 20:27 | `ecfa9d39a7d6` |
+| `results_typetotals.json` | `eval_typetotals.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `sequences.npy` ; prédictions hors pli T-07 | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 20:27 | `5237065ecdc4` |
+| `results_seed_partitions.json` | `eval_seed_partitions.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 (XGBoost n_jobs=4) | `seeds/ae_w<w>_s42..46.npz` (Mac) | 5 partitions `GroupKFold(5, shuffle=True, random_state=0..4)` | 2026-10-08 20:36 | `23aa8f32a43a` |
+| `results_by_module.json` | `eval_by_module.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) ; à 39 sem. `interim/embeddings.npy` (exécution v11 d'origine (versions non enregistrées)) | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:08 | `430872257fc4` |
+| `results_by_module_ci.json` | `eval_module_ci.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | prédictions hors pli de `eval_by_module.py` | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:14 | `f5639ae0d035` |
+| `results_bootstrap.json` | `eval_bootstrap.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | prédictions hors pli (T-06, T-07) ; statistique regroupée, non citée par l'article | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:10 | `105f9aa6c5de` |
+| `results_bootstrap_folds.json` | `eval_bootstrap_folds.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | prédictions hors pli (T-06, T-07, T-16) ; statistique « moyenne des plis », citée par l'article | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-08 13:11 | `6e6061b07729` |
+| `results_endcourse_w39.json` | `eval_endcourse.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/embeddings.npy` (exécution v11 d'origine (versions non enregistrées)) ; modèles définis dans `src/` | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) | 2026-10-07 11:14 | `b2660d327973` |
+| `results_sensitivity.json` | `eval_sensitivity.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) ; `student_table.parquet` | `GroupKFold(5)` par étudiant, scikit-learn 1.9.1 (affectation dans `interim/early_windows/oof/`) ; recalculée sur la cohorte étendue pour S1 | 2026-10-08 13:12 | `7bce5b6c0446` |
+| `results_partitions.json` | `eval_partitions.py` | Mac, Python 3.11.9, TensorFlow 2.16.2, scikit-learn 1.9.1, XGBoost 3.2.0 | `interim/early_windows/ae_w<w>.npz` = graine 42 entraînée sur le Mac (D-033) | 5 partitions `GroupKFold(5, shuffle=True, random_state=0..4)` | 2026-10-08 13:20 | `26d6e93ff30c` |
+
+## Artefacts dont la provenance diffère de l'environnement « Mac »
+
+| Artefact | Provenance | Utilisé par | Déclaré dans l'article |
+|---|---|---|---|
+| `interim/embeddings.npy` (embedding « cours entier », 39 sem.) | exécution v11 d'origine (versions non enregistrées) | tableau 3, §4.2, tableau 8 (lignes 39 sem.) | §3.9 |
+| `results/v11_end_of_course/*` | exécution v11 d'origine (versions non enregistrées), autre partition | n'est plus cité par l'article (remplacé par `results_endcourse_w39.json`) | — |
+| `results/early_windows/origin_folds/*` | machine d'origine, autre partition, autoencodeurs d'origine | §4.9 (sensibilité à la partition) | §4.9 |
+| `interim/early_windows/superseded/ae_w*.npz` | autoencodeurs remplacés le 2026-10-08 (machine d'origine pour 4/8/12 sem. ; Mac, autre script, pour 20 sem.) | plus aucun résultat | — |
+
+## Autoencodeurs utilisés
+
+| Fenêtre | Artefact principal | Graines supplémentaires | Script |
+|---|---|---|---|
+| 4 sem. | `ae_w4.npz` = `seeds/ae_w4_s42.npz` (empreintes identiques) | 43 à 46 (`seeds/`) | `train_ae_seeds.py` |
+| 8 sem. | `ae_w8.npz` = `seeds/ae_w8_s42.npz` (empreintes identiques) | 43 à 46 (`seeds/`) | `train_ae_seeds.py` |
+| 12 sem. | `ae_w12.npz` = `seeds/ae_w12_s42.npz` (empreintes identiques) | 43 à 46 (`seeds/`) | `train_ae_seeds.py` |
+| 20 sem. | `ae_w20.npz` = `seeds/ae_w20_s42.npz` (empreintes identiques) | 43 à 46 (`seeds/`) | `train_ae_seeds.py` |
