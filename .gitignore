@@ -1,0 +1,11 @@
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# raw data (download from the official OULAD source) and heavy intermediate files (see the archive)
+data/
+interim/
+# raw run logs
+logs/*.log
+logs/early_windows/
