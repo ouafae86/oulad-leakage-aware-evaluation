@@ -29,7 +29,7 @@ Code comments and some documentation files are in French.
 ## What is not in this repository
 
 - **The OULAD data.** It is public and must be downloaded from its official source (see below).
-- **- **Fold assignments, out-of-fold predictions and autoencoder embeddings.** They are deposited in a separate archive on Zenodo: <https://doi.org/10.5281/zenodo.23314322>.
+- **Fold assignments, out-of-fold predictions and autoencoder embeddings.** They are deposited in a separate archive on Zenodo: <https://doi.org/10.5281/zenodo.23314322>.
 
 ## Data
 
